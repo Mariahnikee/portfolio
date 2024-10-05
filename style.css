@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+/* Reset some default browser styles */
+>>>>>>> 0e25394ee14466d8a5e91aea22cd1bd44c180fe0
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +9,20 @@
   font-family: 'Arial', sans-serif;
 }
 
+<<<<<<< HEAD
+=======
+/* General styles */
+>>>>>>> 0e25394ee14466d8a5e91aea22cd1bd44c180fe0
 body {
   line-height: 1.6;
   background-color: #f4f4f9;
   color: #333;
 }
 
+<<<<<<< HEAD
+=======
+/* Header styling */
+>>>>>>> 0e25394ee14466d8a5e91aea22cd1bd44c180fe0
 header {
   background-color: #333;
   color: #fff;
@@ -34,10 +46,18 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
+<<<<<<< HEAD
   color: #84848e;
   text-decoration: underline;
 }
 
+=======
+  color: #f4f4f9;
+  text-decoration: underline;
+}
+
+/* Home Section */
+>>>>>>> 0e25394ee14466d8a5e91aea22cd1bd44c180fe0
 #home {
   text-align: center;
   padding: 4rem 2rem;
