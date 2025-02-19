@@ -101,7 +101,7 @@ header{
 }
 #home{
   margin-top: 50px;
-  padding-top: 80px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -132,11 +132,14 @@ p, h1, h2, h3{
 p{
   color: rgb(49, 46, 46);
 }
-#buttons{
+#buttons {
   margin-top: 15px;
+  display: flex;
+  gap: 15px; /* Adjust spacing between buttons */
 }
+
 .case-study{
- padding: 17px;
+ padding: 15px;
  background: rgb(16, 16, 65);
  border: none;
  border-radius: 20px;
