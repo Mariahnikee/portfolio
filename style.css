@@ -14,7 +14,7 @@ body{
 #hero{
 background: url(assests/background-image.jpg);
 background-repeat: no-repeat;
-min-height: 100vh;
+min-height: 50vh;
 width: 100%;
 background-position: center;
 }
@@ -135,7 +135,7 @@ p{
 #buttons {
   margin-top: 15px;
   display: flex;
-  gap: 15px; /* Adjust spacing between buttons */
+  gap: 15px; 
 }
 
 .case-study{
@@ -404,6 +404,9 @@ hr{
       margin-left: -50px;
       margin-bottom: 20px;
   }
+  #hero{
+    min-height: 80vh
+  }
   #projects{
       margin-top: -30px;
       display: flex;
@@ -498,6 +501,9 @@ hr{
   }
   #skills{
       width: 80%;
+  }
+  #hero{
+    min-height: 70vh
   }
   #projects p{
       width: 70%;
