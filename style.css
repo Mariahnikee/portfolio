@@ -220,6 +220,7 @@ p{
   text-align: center;
   background: rgb(237, 235, 235);
 }
+
 .project-img{
   width: 100%; 
   height: auto; 
@@ -255,6 +256,12 @@ p{
   width: 100%; 
   max-width: 400px; 
   height: auto;
+}
+#publication{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+  background: whitesmoke;
 }
 #contact{
   background: url(assests/background-image.jpg);
@@ -596,6 +603,7 @@ hr{
   }
   #skills{
       width: 80%;
+      flex: 1 1 50%;;
   }
   #projects p{
       width: 70%;
