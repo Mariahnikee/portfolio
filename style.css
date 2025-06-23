@@ -107,7 +107,7 @@ header{
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-size: 180%;
+  /* background-size: 180%; */
   transition: 0.5s;
 }
 #home a{
@@ -310,9 +310,9 @@ p{
 }
 
 .project-img{
-  width: 100%; 
+  /* width: 150%;  */
   height: auto; 
-  object-fit: cover; 
+  /* object-fit: cover;  */
   border-radius: 8px;
 }
 .my-projects{
@@ -320,11 +320,16 @@ p{
   flex-direction: row;
   justify-content: space-evenly;
   margin: 50px 70px 50px 70px;
-  gap: 60px;
+  gap: 5px;
 }
 .project-writeup{
   text-align: left;
 }
+
+.project-writeup p{
+  max-width: 560px;;
+}
+
 .project-cointainer {
   display: flex;
   justify-content: space-between; 
@@ -343,7 +348,7 @@ p{
   overflow: hidden;
   width: 100%; 
   max-width: 400px; 
-  height: auto;
+  /* height: auto; */
 }
 #publication{
   padding-top: 30px;
@@ -351,6 +356,8 @@ p{
   text-align: center;
   background: whitesmoke;
 }
+
+
 #contact{
   background: url(assests/background-image.jpg);
   background-repeat: no-repeat;
@@ -656,6 +663,13 @@ hr{
   #buttons a{
       margin-top: 10px;
   }
+
+  /* about me */
+  .about{
+    background: #3498db;
+    
+  }
+
  #about > p {
     width: 85%;
   }
@@ -678,9 +692,9 @@ hr{
   }
 }
   
-  #hero{
+  /* #hero{
     min-height: 70vh
-  }
+  } */
   #projects p{
       width: 70%;
       margin: 15px auto;
@@ -689,13 +703,23 @@ hr{
       margin-top: 20px;
   }
   .project-img{
-      width: 270px;
-      height: 120px;
+      width: 100%;
+      height: auto;
   }
-  .project-card{
+
+  /* .project-card{
       padding: 10px 210px 10px 10px;
       margin-left: -15px;
+  } */
+
+  #hero {
+    min-height: 50vh;
   }
+  
+  /* .project-card {
+    max-width: 320px;
+    height: 180px;
+  } */
   .project-writeup p{
       text-align: left;
       padding-bottom: 20px;
@@ -764,7 +788,7 @@ hr{
       height: 120px;
   }
   .project-card{
-      padding: 10px 20px 10px 5px;
+      padding:  10px 0px;
       margin-left: -15px;  
   }
   .project-writeup p{
