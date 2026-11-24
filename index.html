@@ -17,7 +17,7 @@
     <meta property="og:image:alt" content="Shoyemi Maria, Software Developer">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css?v=5"/>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -110,6 +110,7 @@
                     <li class="skills">CSS</li>
                     <li class="skills">React</li>
                     <li class="skills">Next.js</li>
+                    <li class="skills">Node.js</li>
                     <li class="skills">Tailwind CSS</li>
                     <li class="skills">REST APIs</li>
                     <li class="skills">Sanity CMS</li>
@@ -121,7 +122,6 @@
                     <li class="skills">Jira</li>
                     <li class="skills">Figma</li>
                     </ul>
-                    <p class="learning"><b>Currently learning:</b> Node.js and Express.js</p>
                 </div>
             </div>
         </div>
@@ -168,6 +168,25 @@
             </div>
 
             <div class="publication-container">
+                  <article id="shopmk" class="my-projects fade-in">
+                <div class="project-card">
+                <img src="assets/shopmk.webp" alt="Shop MK Finds homepage with home decor products" width="800" height="420" loading="lazy" class="project-img"/>
+                </div>
+                <div id="shopmk-writeup" class="project-writeup">
+                    <span class="project-label">Full e-commerce build · Built from scratch</span>
+                    <h3>Shop MK Finds</h3>
+                    <p>Online store for aesthetic home decor, lighting and lifestyle products, delivering across Nigeria.
+                    Shoppers can browse by category, search, add to cart and pay securely with Paystack.</p>
+                    <p><b>Under the hood:</b> serverless functions re-check every price before payment and confirm payments
+                    through Paystack webhooks. Products and orders live in Sanity CMS, new orders trigger email notifications,
+                    and there's an admin page for managing orders.</p>
+                    <p><b>SEO:</b> page titles and descriptions, structured data, a sitemap, a product feed and pre-rendered
+                    pages so search engines and WhatsApp or Instagram link previews see real content.</p>
+                    <ul class="tech"><li>React</li><li>Vite</li><li>Tailwind CSS</li><li>Sanity</li><li>Paystack</li><li>Netlify Functions</li><li>Resend</li><li>Technical SEO</li></ul>
+                    <a href="https://shopmkfinds.store/" class="case-study" target="_blank" rel="noopener">LIVE SITE</a>
+                </div>
+            </article>
+
                   <article id="joshlinkautos" class="my-projects fade-in">
                 <div class="project-card">
                 <img src="assets/joshlink.webp" alt="Joshlink Automobile website on a laptop and a phone" width="960" height="759" loading="lazy" class="project-img"/>
@@ -437,7 +456,7 @@
         </footer>
     </div>
     </main>
-    <script src="index.js"></script>
+    <script src="index.js?v=4"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

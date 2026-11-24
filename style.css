@@ -1149,3 +1149,56 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     width: 85%;
   }
 }
+
+/* layout polish */
+.pr-zone .pr-heading{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project-writeup .tech + .case-study{
+  margin-top: 5px;
+}
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .nav{
+    gap: 18px;
+  }
+  .nav .nav-key{
+    margin-right: 18px;
+  }
+  .my-projects{
+    margin: 40px 30px;
+    gap: 30px;
+  }
+  .project-card{
+    max-width: 360px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .my-projects{
+    margin: 40px 20px;
+    align-items: center;
+  }
+  .project-writeup{
+    width: 100%;
+    max-width: 560px;
+  }
+  .tech li{
+    font-size: 11px;
+  }
+}
+.my-projects .project-card{
+  align-self: center;
+}
+.my-projects .project-img{
+  align-self: center;
+}
+@media screen and (max-width: 768px) {
+  .my-projects .project-writeup p{
+    padding-bottom: 0;
+    margin-bottom: 15px;
+  }
+  .my-projects .project-writeup .tech{
+    margin-top: 5px;
+  }
+}
