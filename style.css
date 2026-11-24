@@ -1124,3 +1124,28 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     opacity: 1;
   }
 }
+
+/* product contributions */
+#contributions{
+  padding-bottom: 10px;
+}
+.product-work{
+  background: whitesmoke;
+  padding: 1px 0;
+}
+.pr-zone{
+  padding: 10px 20px 40px;
+  text-align: center;
+  background: whitesmoke;
+}
+.pr-heading{
+  margin: 10px 0 25px;
+}
+.product-work .project-writeup p b{
+  color: rgb(16, 16, 65);
+}
+@media screen and (max-width: 768px) {
+  .pr-zone .pr-note{
+    width: 85%;
+  }
+}
