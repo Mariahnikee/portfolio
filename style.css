@@ -1,5 +1,6 @@
 html{
   scroll-behavior: smooth;
+  scroll-padding-top: 50px;
 }
 body{
   margin: 0;
@@ -10,9 +11,10 @@ body{
   width: 40px;
   height: 50px;
   border-radius: 50%;
+  object-fit: cover;
 }
 #hero{
-background: url(assests/background-image.jpg);
+background: url(assets/background.jpg);
 background-repeat: no-repeat;
 min-height: 40vh;
 width: 100%;
@@ -359,7 +361,7 @@ p{
 
 
 #contact{
-  background: url(assests/background-image.jpg);
+  background: url(assets/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -864,5 +866,261 @@ hr{
   #last-footer p{
       width: 75%;
       margin: auto;
+  }
+}
+
+/****** 2026 upgrade: new sections in the original style ******/
+
+.skip-link{
+  position: absolute;
+  left: 10px;
+  top: -60px;
+  z-index: 5;
+  padding: 10px 15px;
+  background: rgb(16, 16, 65);
+  color: rgb(227, 223, 223);
+  border-radius: 20px;
+  font-family: Geneva;
+  font-weight: bold;
+}
+.skip-link:focus{
+  top: 60px;
+}
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
+  outline: 3px solid #3498db;
+  outline-offset: 2px;
+}
+#home-title{
+  margin-top: -15px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: rgb(16, 16, 65);
+}
+#skills{
+  list-style: none;
+  margin: 0;
+}
+.learning{
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* experience */
+#experience{
+  padding: 30px 20px 40px;
+  text-align: center;
+  background: white;
+}
+.timeline{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  border-left: 3px solid rgb(16, 16, 65);
+}
+.job{
+  position: relative;
+  margin: 0 0 25px 25px;
+  padding: 18px 22px;
+  background: whitesmoke;
+  border-radius: 11px;
+  box-shadow: 0 6px 12px rgba(139, 142, 175, 0.35);
+}
+.job::before{
+  content: "";
+  position: absolute;
+  left: -34px;
+  top: 24px;
+  width: 13px;
+  height: 13px;
+  background: #393b64;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.job-head{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 5px 20px;
+}
+.job h3{
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+.job-date{
+  font-family: Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #393b64;
+  white-space: nowrap;
+}
+.job p{
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* project details */
+.project-label{
+  display: inline-block;
+  margin-bottom: 8px;
+  font-family: Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #393b64;
+}
+.project-writeup h3{
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.project-writeup p{
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.tech{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 25px;
+  padding: 0;
+  list-style: none;
+}
+.tech li{
+  padding: 5px 12px;
+  background: #393b64;
+  color: white;
+  border-radius: 12px;
+  font-family: 'Lucida Sans', 'Lucida Grande', Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+.project-writeup .case-study{
+  display: inline-block;
+}
+
+/* contributions */
+#contributions{
+  padding: 30px 20px 40px;
+  text-align: center;
+  background: whitesmoke;
+}
+.pr-grid{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  text-align: left;
+}
+.pr-card{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: white;
+  border-radius: 11px;
+  box-shadow: 0 6px 12px rgba(139, 142, 175, 0.35);
+  transition: transform 0.3s ease;
+}
+.pr-card:hover{
+  transform: translateY(-3px);
+}
+.pr-kind{
+  font-family: Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #393b64;
+}
+.pr-card h3{
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.pr-card p{
+  margin: 0 0 18px;
+  font-size: 14px;
+}
+.pr-link{
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 8px 14px;
+  background: rgb(16, 16, 65);
+  color: rgb(227, 223, 223);
+  border-radius: 20px;
+  font-family: Geneva;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.pr-link:hover{
+  background: transparent;
+  color: rgb(16, 16, 65);
+  box-shadow: inset 0 0 0 1px grey;
+}
+.pr-note{
+  max-width: 800px;
+  margin: 30px auto 0;
+  line-height: 1.6;
+}
+.contact-email{
+  color: rgb(16, 16, 65);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+  .pr-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav{
+    visibility: hidden;
+  }
+  .nav.show{
+    visibility: visible;
+  }
+  .pr-grid{
+    grid-template-columns: 1fr;
+  }
+  #experience > p, #contributions > p{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .timeline{
+    margin-left: 15px;
+  }
+  .job{
+    margin-left: 18px;
+    padding: 15px;
+  }
+  .job::before{
+    left: -27px;
+  }
+  .job p, .pr-card p{
+    width: auto;
+  }
+  .project-img{
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .project-label{
+    margin-top: 35px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html{
+    scroll-behavior: auto;
+  }
+  .js-scroll, .scrolled.fade-in, .scrolled.slide-left{
+    animation: none;
+    opacity: 1;
   }
 }

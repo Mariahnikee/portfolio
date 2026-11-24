@@ -3,27 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoyemi Maria Portfolio</title>
+    <title>Shoyemi Maria | Software Developer, React, Next.js &amp; Technical SEO</title>
+    <meta name="description" content="Shoyemi Maria is a software developer building fast, accessible and findable websites and web products with React and Next.js, with experience in technical SEO and AI product engineering.">
+    <link rel="canonical" href="https://mariahnikee.github.io/portfolio/">
+    <meta name="theme-color" content="#101041">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Shoyemi Maria | Software Developer">
+    <meta property="og:description" content="Websites and web products with React and Next.js, technical SEO, accessibility and AI product engineering.">
+    <meta property="og:url" content="https://mariahnikee.github.io/portfolio/">
+    <meta property="og:image" content="https://mariahnikee.github.io/portfolio/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Shoyemi Maria, Software Developer">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css"/>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Shoyemi Maria",
+      "jobTitle": "Software Developer",
+      "url": "https://mariahnikee.github.io/portfolio/",
+      "image": "https://mariahnikee.github.io/portfolio/assets/maria.webp",
+      "worksFor": { "@type": "Organization", "name": "AYO LLC" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Ibadan" },
+      "knowsAbout": ["React", "Next.js", "JavaScript", "Technical SEO", "Web Accessibility", "AI Product Engineering"],
+      "sameAs": [
+        "https://github.com/Mariahnikee",
+        "https://www.linkedin.com/in/shoyemi-maria-a70401167/",
+        "https://medium.com/@shoyemimaria77"
+      ]
+    }
+    </script>
 </head>
 <body>
+    <a class="skip-link" href="#about">Skip to content</a>
     <main>
     <div class="container">
         <div id="hero">
         <header class="banner">
         <div id="image-name">
-            <img src="assests/Maria.jpg" alt="Maria picture" id="mariaimg"/>
+            <img src="assets/maria.webp" alt="" id="mariaimg" width="40" height="40"/>
             <p>MARIA</p>
         </div>
-            <nav id="navbar">
-                <ul class="nav">
+            <nav id="navbar" aria-label="Main">
+                <ul class="nav" id="nav-list">
                     <li class="nav-key"><a href="#hero">HOME</a></li>
                     <li class="nav-key"><a href="#about">ABOUT</a></li>
+                    <li class="nav-key"><a href="#experience">EXPERIENCE</a></li>
                     <li class="nav-key"><a href="#projects">PROJECTS</a></li>
                     <li class="nav-key"><a href="#contact">CONTACT</a></li>
-                </ul>   
-                    <button class="burger-menu" id="burger-menu">
-                        <ion-icon class="bars" name="menu-outline"></ion-icon>
+                </ul>
+                    <button class="burger-menu" id="burger-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-list">
+                        <ion-icon class="bars" name="menu-outline" aria-hidden="true"></ion-icon>
                     </button>
             </nav>
         </header>
@@ -31,181 +64,274 @@
     <section class="scroll-container">
         <div id="home">
             <h1>HI, I'M SHOYEMI MARIA</h1>
-            <p id="home-writeup">Welcome to my digital playground!<br> I'm a passionate website developer
-                who is result-oriented and interested in building successful projects.<br></p>
+            <p id="home-title">Software Developer &nbsp;|&nbsp; React &amp; Next.js &nbsp;|&nbsp; Technical SEO &nbsp;|&nbsp; AI Product Engineering</p>
+            <p id="home-writeup">I build fast, accessible websites and web products that people can actually find.
+                I'm currently building client websites and booking pages at <b>AYO LLC</b>.</p>
 
-                <div id="buttons"> 
-                    <a href="https://drive.google.com/drive/folders/1qtSmQn6Z9DxZ7REx4hgRRvrqX3EJWDgK?usp=sharing" class="case-study" target="_blank" >
+                <div id="buttons">
+                    <a href="https://drive.google.com/drive/folders/1qtSmQn6Z9DxZ7REx4hgRRvrqX3EJWDgK?usp=sharing" class="case-study" target="_blank" rel="noopener">
                         DOWNLOAD CV
                     </a>
                     <a href="#projects" class="case-study">PROJECTS</a>
-                </div>  
+                </div>
             <div class="home-socials">
-                <a href="https://github.com/Mariahnikee" target="_blank"><img src="assests/github.png" alt="Github" loading="lazy" class="home-icon"/></a>
-                <a href="https://medium.com/@shoyemimaria77" target="_blank"><img src="assests/img1.jpg" alt="X" loading="lazy" class="home-icon"/></a>
-               
-                <a href="https://www.linkedin.com/in/" target="_blank"><img src="assests/linkedin.png" alt="Linkedin" loading="lazy" class="home-icon"/></a> 
+                <a href="https://github.com/Mariahnikee" target="_blank" rel="noopener"><img src="assests/github.png" alt="GitHub" width="20" height="20" class="home-icon"/></a>
+                <a href="https://medium.com/@shoyemimaria77" target="_blank" rel="noopener"><img src="assests/img1.jpg" alt="Medium" width="20" height="20" class="home-icon"/></a>
+                <a href="https://www.linkedin.com/in/shoyemi-maria-a70401167/" target="_blank" rel="noopener"><img src="assests/linkedin.png" alt="LinkedIn" width="20" height="20" class="home-icon"/></a>
             </div>
         </div>
         </div>
-        
+
     </section>
 
     <section class="scroll-container">
         <div id="about" class="scroll-element js-scroll slide-left">
             <h2>ABOUT ME</h2>
             <hr class="sub-mark">
-            <p>Here you will find more information about me,<br> what I do, and my current skills mostly in<br> terms
-                of web development.
-            </p>
+            <p>Here you will find more information about me,<br> what I do, and the tools I work with.</p>
             <div id="more">
                 <div id="me">
                     <h3>Get to know me!</h3>
-                    <p>I'm a <b>Fullstack Developer</b> building & managing<br> the <b>Front-end and Backend of Web Applications</b> 
-                    that leads<br> to the success of the overall product. Check out some<br> of my work in the <b>Projects</b> section.<br><br> 
-                    I'm open to <b>Job</b> opportunities where I can contribute,<br> learn and grow.<br> If you have a good opportunity
-                    that matches my skills and experience, don't hesistate to contact me.
-                    </p>
+                    <p>I'm a <b>Software Developer</b> who builds responsive websites and web applications with
+                    <b>React and Next.js</b>. At <b>AYO LLC</b> I build business websites and booking pages, with forms,
+                    API and CMS integrations.</p>
+                    <p>I recently completed <b>HNG Internship 15 (AI Product Engineering)</b> with Team Cybertron, where I had
+                    20+ pull requests merged across real products: new features, bug fixes, accessibility and technical SEO.
+                    I build with AI coding agents, and I stay responsible for what ships: I read the diff and test every change.</p>
+                    <p>Before tech I studied Physics at the University of Ibadan, which is probably why I still like taking
+                    problems apart until they make sense. I'm open to <b>software developer roles</b>, remote or hybrid, and to freelance web projects.</p>
                     <a href="#contact" class="case-study">CONTACT</a>
                 </div>
                 <div id="skills-general">
                     <h3>My Skills</h3>
-                    <div id="skills">
-                    <div class="skills">CSS</div>
-                    <div class="skills">HTML</div>
-                    <div class="skills">JavaScript</div>
-                    <div class="skills">React</div>
-                    <div class="skills">TailWind CSS</div>
-                    <div class="skills">Next.js</div>
-                    <div class="skills">Node js</div>
-                    <div class="skills">GIT</div>
-                    <div class="skills">Figma</div>
-                    <div class="skills">Shopify</div>
-                    <div class="skills">Responsive design</div>
-                    <div class="skills">Github</div>
-                </div>
-            </div>
-        </div>
-    </section>      
-
-    <section class="scroll-container">
-            <div id="projects" class="scroll-element js-scroll slide-left">
-            <h2>PROJECTS</h2>
-            <hr class="sub-mark">
-            <p>Here you will find some of the projects that I created with each project containing
-                its own live demo.
-            </p>
-            </div>
-
-            <div class="publication-container">
-                  <div id="joshlinkautos"  class="my-projects fade-in">
-                <div class="project-card">
-                <img src="assests/joshlinkautos2.png" alt="accessoryden-image" class="project-img"/>
-                </div>
-                <div id="joshlinkautos-writeup" class="project-writeup">
-                    <h3>Joshlink Automobile</h3>
-                    <p>Joshlink Automobile is a responsive and user-friendly automobile marketplace website designed to showcase vehicle listings and connect buyers with sellers. The platform features dynamic car displays, inquiry functionality, content management integration, and a premium interface built with React, Tailwind CSS, Sanity, and Node.js.
-</p>
-                    <a href="https://joshlinkautomobile.com" class="case-study" target="_blank">LIVE DEMO</a>
-                </div>
-            </div>
-
-              <div id="WonderKiddie Hub"  class="my-projects fade-in">
-                <div class="project-card">
-                <img src="assests/wonderkiddie.png" alt="accessoryden-image" class="project-img"/>
-                </div>
-                <div id="wonderkiddiehub-writeup" class="project-writeup">
-                    <h3>WonderKiddie Hub</h3>
-                    <p>WonderKiddie Hub is a responsive and user-friendly e-commerce website designed to sell children’s books through an engaging digital experience. The platform features product listings, shopping functionality, smooth navigation, and mobile-friendly layouts built with React, Tailwind CSS, and Node.js.
-</p>
-                    <a href="https://www.wonderkiddiehub.com" class="case-study" target="_blank">LIVE DEMO</a>
-                </div>
-            </div>
-            <div id="accessoryden"  class="my-projects fade-in">
-
-                <div class="project-card">
-                <img src="assests/project1.png" alt="accessoryden-image" class="project-img"/>
-                </div>
-
-                
-
-                <div id="accessoryden-writeup" class="project-writeup">
-                    <h3>Accessory Den</h3>
-                    <p>Accessory Den is a responsive and user-friendly<br> e-commerce shopping store designed to offer a fast and streamlined shopping experience. <br> The project features a prototype with a slideshow display, checkout, and cart pages,<br> all integrated into a user-friendly interface using HTML, CSS, and React.js..</p>
-                    <a href="https://accessory-den-app.onrender.com/" class="case-study" target="_blank">LIVE DEMO</a>
-                </div>
-            </div>
-
-            <div id="airaware"  class="my-projects fade-in">
-                <div class="project-card">
-                <img src="assests/airaware.png" alt="accessoryden-image" class="project-img"/>
-                </div>
-                <div id="airaware-writeup" class="project-writeup">
-                    <h3>Air Aware</h3>
-                    <p>AirAware is a responsive and user-friendly<br> web application designed to provide real-time air quality information.<br> The project features a sleek interface with dynamic data fetching, interactive displays,<br> and accessibility-focused design, all built using React.js and Tailwind.</p>
-                    <a href="https://airaware-4sxg.onrender.com" class="case-study" target="_blank">LIVE DEMO</a>
-                </div>
-            </div>
-
-            <div id="rentride"  class="my-projects fade-in">
-                <div class="project-card">
-                <img src="assests/project3.png" alt="rentride_image" class="project-img"/>
-                </div>
-                <div id="rentride-writeup" class="project-writeup">
-                    <h3>Rent Ride</h3>
-                    <p>This car rental app is a responsive and user-friendly platform designed <br> to offer a seamless experience for users to rent any type of car in any location. <br>The project includes a fully interactive interface with a car selection process, <br>location-based filtering, and booking functionality, all built using React.</p>
-                    <a href="https://rentride-p4fc.onrender.com" class="case-study" target="_blank">LIVE DEMO</a>
-                </div>
-            </div>
-
-            <div id="pokemonfetcher"  class="my-projects fade-in">
-                <div class="project-card">
-                <img src="assests/pokeman-cover.png" alt="pokemonfetcher_image" class="project-img"/>
-                </div>
-                <div id="pokemonfetcher-writeup" class="project-writeup">
-                    <h3>Pokémon Fetcher</h3>
-                    <p>This web app allows you to explore Pokémon data by fetching information from the PokéAPI. <br>
-                       With a visually appealing card layout, you can search for Pokémon, view their details, and enjoy an interactive experience. <br>
-                       The app is built using HTML, CSS, and JavaScript to offer a responsive and engaging interface.</p>
-                    <a href="https://pokeman-game.onrender.com/" class="case-study" target="_blank">LIVE DEMO</a>
-                </div>
-            </div>
-
-             <div id="flawlessfinds"  class="my-projects fade-in">
-                <div class="project-card">
-                <img src="assests/shopifyapp.png" alt="FlawlessFinds app" class="project-img"/>
-                </div>
-                <div id="flawlessfinds-writeup" class="project-writeup">
-                    <h3>Flawless Finds</h3>
-                    <p>This online beauty store is designed to make shopping for makeup effortless and enjoyable. <br> 
-                        With a sleek and user-friendly interface, customers can browse a wide range of beauty products, <br> 
-                        filter by categories, and enjoy a smooth checkout process. <br> 
-                        Built on Shopify, the platform ensures a seamless and secure shopping experience.</p>
-                    <a href="https://qic0pf-sz.myshopify.com/" class="case-study" target="_blank">LIVE DEMO</a>
+                    <ul id="skills">
+                    <li class="skills">JavaScript</li>
+                    <li class="skills">HTML</li>
+                    <li class="skills">CSS</li>
+                    <li class="skills">React</li>
+                    <li class="skills">Next.js</li>
+                    <li class="skills">Tailwind CSS</li>
+                    <li class="skills">REST APIs</li>
+                    <li class="skills">Sanity CMS</li>
+                    <li class="skills">Technical SEO</li>
+                    <li class="skills">Accessibility</li>
+                    <li class="skills">Responsive design</li>
+                    <li class="skills">AI coding agents</li>
+                    <li class="skills">Git &amp; GitHub</li>
+                    <li class="skills">Jira</li>
+                    <li class="skills">Figma</li>
+                    </ul>
+                    <p class="learning"><b>Currently learning:</b> Node.js and Express.js</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="scroll-container">
+        <div id="experience" class="scroll-element js-scroll slide-left">
+            <h2>EXPERIENCE</h2>
+            <hr class="sub-mark">
+            <p>Where I've worked and what I've built along the way.</p>
+            <ol class="timeline">
+                <li class="job">
+                    <div class="job-head"><h3>Software Developer, AYO LLC</h3><span class="job-date">Aug 2025 – Present</span></div>
+                    <p>Build responsive business websites and booking pages for clients with React and Next.js. Integrate contact and
+                    booking forms, APIs and CMS content, including a Sanity-powered blog with Google Analytics, and improve usability and mobile performance.</p>
+                </li>
+                <li class="job">
+                    <div class="job-head"><h3>AI Product Engineering Intern, HNG Internship 15</h3><span class="job-date">2026</span></div>
+                    <p>Completed the programme with Team Cybertron. Shipped features and fixes across Zedu, StartNG and Ziki, filed 30+ issues,
+                    and worked with AI agents in contributor and reviewer roles through GitHub pull requests and code review.</p>
+                </li>
+                <li class="job">
+                    <div class="job-head"><h3>Frontend Developer Intern, Visionary Insights LLC</h3><span class="job-date">Oct 2024 – Jul 2025</span></div>
+                    <p>Built frontend features for an AI writing application with React, Next.js and Tailwind CSS, and contributed to the
+                    website for TalentMakers, a nonprofit helping African youth gain IT skills.</p>
+                </li>
+                <li class="job">
+                    <div class="job-head"><h3>Frontend Developer Intern, AltSchool Africa</h3><span class="job-date">Apr 2023 – Sep 2024</span></div>
+                    <p>Worked with developers and designers on a team landing page and built frontend projects with HTML, CSS, JavaScript and React.</p>
+                </li>
+                <li class="job">
+                    <div class="job-head"><h3>Product Designer Intern, HNG Tech</h3><span class="job-date">Feb 2023 – Aug 2023</span></div>
+                    <p>Conducted user research and used design tools to improve the user experience of digital products.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="scroll-container">
+            <div id="projects" class="scroll-element js-scroll slide-left">
+            <h2>PROJECTS</h2>
+            <hr class="sub-mark">
+            <p>Live websites I've built for real businesses, followed by some earlier projects.</p>
+            </div>
+
+            <div class="publication-container">
+                  <article id="joshlinkautos" class="my-projects fade-in">
+                <div class="project-card">
+                <img src="assets/joshlink.webp" alt="Joshlink Automobile website on a laptop and a phone" width="960" height="759" loading="lazy" class="project-img"/>
+                </div>
+                <div id="joshlinkautos-writeup" class="project-writeup">
+                    <span class="project-label">Client website</span>
+                    <h3>Joshlink Automobile</h3>
+                    <p>Website for a Lagos car dealership. Buyers can browse vehicles in stock, apply for car financing and send
+                    enquiries to buy, sell or swap a car, with content managed in Sanity CMS.</p>
+                    <ul class="tech"><li>React</li><li>Tailwind CSS</li><li>Sanity</li><li>Node.js</li></ul>
+                    <a href="https://joshlinkautomobile.com" class="case-study" target="_blank" rel="noopener">LIVE SITE</a>
+                </div>
+            </article>
+
+              <article id="wonderkiddiehub" class="my-projects fade-in">
+                <div class="project-card">
+                <img src="assets/wonderkiddie.webp" alt="WonderKiddie Hub website on a laptop, tablet and phone" width="960" height="781" loading="lazy" class="project-img"/>
+                </div>
+                <div id="wonderkiddiehub-writeup" class="project-writeup">
+                    <span class="project-label">Client website</span>
+                    <h3>WonderKiddie Hub</h3>
+                    <p>Online store for a children's book brand, with a book catalogue, product pages, ordering and
+                    mobile-friendly navigation.</p>
+                    <ul class="tech"><li>React</li><li>Tailwind CSS</li><li>Node.js</li></ul>
+                    <a href="https://www.wonderkiddiehub.com" class="case-study" target="_blank" rel="noopener">LIVE SITE</a>
+                </div>
+            </article>
+
+              <article id="dolanancybankole" class="my-projects fade-in">
+                <div class="project-card">
+                <img src="assets/dolan.webp" alt="Homepage of the Dola Nancy Bankole website" width="960" height="484" loading="lazy" class="project-img"/>
+                </div>
+                <div id="dolanancybankole-writeup" class="project-writeup">
+                    <span class="project-label">Client website</span>
+                    <h3>Dolanancybankole.com</h3>
+                    <p>Website for a counselling practice and author, presenting counselling services, books and session
+                    bookings, with a blog managed in Sanity CMS.</p>
+                    <ul class="tech"><li>React</li><li>Tailwind CSS</li><li>Sanity</li></ul>
+                    <a href="https://dolanancybankole.com" class="case-study" target="_blank" rel="noopener">LIVE SITE</a>
+                </div>
+            </article>
+
+            <article id="airaware" class="my-projects fade-in">
+                <div class="project-card">
+                <img src="assets/airaware.webp" alt="AirAware air quality app" width="640" height="415" loading="lazy" class="project-img"/>
+                </div>
+                <div id="airaware-writeup" class="project-writeup">
+                    <span class="project-label">Web app</span>
+                    <h3>AirAware</h3>
+                    <p>Web app that shows real-time air quality information, with dynamic data fetching, interactive displays
+                    and an accessibility-focused design.</p>
+                    <ul class="tech"><li>React</li><li>Tailwind CSS</li><li>REST API</li></ul>
+                    <a href="https://airaware-4sxg.onrender.com" class="case-study" target="_blank" rel="noopener">LIVE DEMO</a>
+                </div>
+            </article>
+
+            <article id="rentride" class="my-projects fade-in">
+                <div class="project-card">
+                <img src="assets/rentride.webp" alt="Rent Ride car rental app" width="640" height="420" loading="lazy" class="project-img"/>
+                </div>
+                <div id="rentride-writeup" class="project-writeup">
+                    <span class="project-label">Web app</span>
+                    <h3>Rent Ride</h3>
+                    <p>Car rental app with an interactive car selection process, location-based filtering and booking.</p>
+                    <ul class="tech"><li>React</li></ul>
+                    <a href="https://rentride-p4fc.onrender.com" class="case-study" target="_blank" rel="noopener">LIVE DEMO</a>
+                </div>
+            </article>
+
+            <article id="accessoryden" class="my-projects fade-in">
+                <div class="project-card">
+                <img src="assets/accessoryden.webp" alt="Accessory Den shopping store" width="640" height="414" loading="lazy" class="project-img"/>
+                </div>
+                <div id="accessoryden-writeup" class="project-writeup">
+                    <span class="project-label">Prototype</span>
+                    <h3>Accessory Den</h3>
+                    <p>E-commerce store prototype with a product slideshow, cart and checkout pages.</p>
+                    <ul class="tech"><li>React</li><li>HTML</li><li>CSS</li></ul>
+                    <a href="https://accessory-den-app.onrender.com/" class="case-study" target="_blank" rel="noopener">LIVE DEMO</a>
+                </div>
+            </article>
+
+            <article id="pokemonfetcher" class="my-projects fade-in">
+                <div class="project-card">
+                <img src="assets/pokemon.webp" alt="Pokémon Fetcher card layout" width="640" height="414" loading="lazy" class="project-img"/>
+                </div>
+                <div id="pokemonfetcher-writeup" class="project-writeup">
+                    <span class="project-label">Web app</span>
+                    <h3>Pokémon Fetcher</h3>
+                    <p>Search and explore Pokémon data from the PokéAPI, shown in a responsive card layout.</p>
+                    <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                    <a href="https://pokeman-game.onrender.com/" class="case-study" target="_blank" rel="noopener">LIVE DEMO</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="scroll-container">
+        <div id="contributions" class="scroll-element js-scroll slide-left">
+            <h2>CONTRIBUTIONS</h2>
+            <hr class="sub-mark">
+            <p>Merged pull requests from HNG Internship 15 with Team Cybertron. Each one links to the code on GitHub.</p>
+            <ul class="pr-grid">
+                <li class="pr-card">
+                    <span class="pr-kind">Feature</span>
+                    <h3>Export a conversation as a text or PDF transcript</h3>
+                    <p>Zedu desktop app, with unit tests</p>
+                    <a href="https://github.com/zeduchat/zedu-desktop/pull/1231" class="pr-link" target="_blank" rel="noopener">VIEW PR</a>
+                </li>
+                <li class="pr-card">
+                    <span class="pr-kind">Feature</span>
+                    <h3>Configurable global hotkey to show or hide the app</h3>
+                    <p>Zedu desktop app</p>
+                    <a href="https://github.com/zeduchat/zedu-desktop/pull/1232" class="pr-link" target="_blank" rel="noopener">VIEW PR</a>
+                </li>
+                <li class="pr-card">
+                    <span class="pr-kind">Backend + frontend</span>
+                    <h3>"Remind me 10 minutes before" for the daily tournament</h3>
+                    <p>StartNG email reminder and opt-in</p>
+                    <a href="https://github.com/Cybertron-HNG/startng-fe/pull/232" class="pr-link" target="_blank" rel="noopener">VIEW PR</a>
+                </li>
+                <li class="pr-card">
+                    <span class="pr-kind">Bug fix</span>
+                    <h3>Challenge flow that iPhone and Safari were blocking</h3>
+                    <p>StartNG</p>
+                    <a href="https://github.com/Cybertron-HNG/startng-fe/pull/233" class="pr-link" target="_blank" rel="noopener">VIEW PR</a>
+                </li>
+                <li class="pr-card">
+                    <span class="pr-kind">Bug fix</span>
+                    <h3>Voice notes show their real length instead of "0:05"</h3>
+                    <p>Zedu desktop app</p>
+                    <a href="https://github.com/zeduchat/zedu-desktop/pull/935" class="pr-link" target="_blank" rel="noopener">VIEW PR</a>
+                </li>
+                <li class="pr-card">
+                    <span class="pr-kind">Accessibility</span>
+                    <h3>Removed an invalid nested button from a call to action</h3>
+                    <p>Zedu web app</p>
+                    <a href="https://github.com/Cybertron-HNG/zedu-fe/pull/145" class="pr-link" target="_blank" rel="noopener">VIEW PR</a>
+                </li>
+            </ul>
+            <p class="pr-note">Also: page titles and sitemap coverage for Ziki (technical SEO), the HTML lang attribute, alt text and aria-current fixes on Zedu web, and 30+ issues filed across Zedu's apps.</p>
+        </div>
+    </section>
 
     <section class="scroll-container">
         <div id="publication" class="scroll-element js-scroll slide-left">
             <h2>PUBLICATIONS</h2>
             <hr class="sub-mark">
-            <p>Here you will find some of my publications. 
+            <p>Here you will find some of my publications.
             </p>
         </div>
         <div class="publication-container">
-            <div id="react-vs-vue" class="my-projects fade-in">
+            <article id="react-vs-vue" class="my-projects fade-in">
                 <div class="project-card">
-                    <img src="assests/blog-cover.png" alt="react-vs-vue-image" class="project-img"/>
+                    <img src="assets/blog-cover.webp" alt="ReactJS vs. Vue.js article cover" width="640" height="414" loading="lazy" class="project-img"/>
                 </div>
                 <div id="react-vs-vue-writeup" class="project-writeup">
+                    <span class="project-label">Article</span>
                     <h3>ReactJS vs. Vue.js: A Developer’s Perspective</h3>
-                    <p>In this blog post, I dive deep into comparing ReactJS and Vue.js from a developer’s point of view. <br> I explore key differences, use cases, and provide insights into which framework might be more suitable based on various development needs. <br> The post covers performance, ease of use, scalability, and community support for both frameworks.</p>
-                    <a href="https://medium.com/@shoyemimaria77/reactjs-vs-vue-js-a-developers-perspective-9b3310cbd828" class="case-study" target="_blank">BLOG</a>
+                    <p>A comparison of React and Vue from a developer's point of view: key differences, use cases, performance,
+                    ease of use, scalability and community support, and which one suits which kind of project.</p>
+                    <a href="https://medium.com/@shoyemimaria77/reactjs-vs-vue-js-a-developers-perspective-9b3310cbd828" class="case-study" target="_blank" rel="noopener">READ ON MEDIUM</a>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
 
@@ -213,17 +339,17 @@
         <div id="contact" class="scroll-element js-scroll slide-left">
             <h2>CONTACT</h2>
             <hr class="sub-mark">
-            <p>Feel free to contact me by submitting the form below and<br> I will get back to you
-                as soon as possible
+            <p>Hiring, or building something on the web? Send me a message below<br> or email me at
+                <a class="contact-email" href="mailto:shoyemimariah77@gmail.com">shoyemimariah77@gmail.com</a>.
             </p>
             <div id="form-zone">
-                <form  id="form" action="https://getform.io/f/axowxnkb" method="post">
+                <form id="form" action="https://getform.io/f/axowxnkb" method="post">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" required/>
+                    <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" autocomplete="name" required/>
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="sender-email" placeholder="Enter Your Email"  required/>
+                    <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" autocomplete="email" required/>
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Enter Your Message" rows="7" cols="40"></textarea>
+                    <textarea id="message" name="message" placeholder="Enter Your Message" rows="7" cols="40" required></textarea>
 
                     <input type="submit" value="SUBMIT" class="case-study">
                 </form>
@@ -232,19 +358,19 @@
     </section>
 
 
-        <div id="footer">
+        <footer id="footer">
             <div id="sub-footer">
             <div id="left-footer">
                 <h4>MARIA</h4>
-                <p>A passionate frontend developer weaving<br> pixels into captivating web experiences. </p>
+                <p>Software developer building fast, accessible<br> and findable web products.</p>
             </div>
             <div id="social-links">
                 <h4>SOCIAL</h4>
                 <div class="social-container">
                 <ul class="socials">
-                    <li class="item"><a href="https://medium.com/@shoyemimaria77"><img src="assests/img1.jpg" width="40px" height="40px" class="icon"></a></li>
-                    <li class="item"><a href="https://github.com/Mariahnikee"><img src="assests/github.png" class="icon"></a></li>
-                    <li class="item"><a href="https://www.linkedin.com/in/shoyemi-maria-a70401167/?jobid=1234"><img src="assests/linkedin.png" class="icon"></a></li>
+                    <li class="item"><a href="https://medium.com/@shoyemimaria77" target="_blank" rel="noopener"><img src="assests/img1.jpg" alt="Medium" width="25" height="25" class="icon"></a></li>
+                    <li class="item"><a href="https://github.com/Mariahnikee" target="_blank" rel="noopener"><img src="assests/github.png" alt="GitHub" width="25" height="25" class="icon"></a></li>
+                    <li class="item"><a href="https://www.linkedin.com/in/shoyemi-maria-a70401167/" target="_blank" rel="noopener"><img src="assests/linkedin.png" alt="LinkedIn" width="25" height="25" class="icon"></a></li>
                 </ul>
                 </div>
             </div>
@@ -252,9 +378,9 @@
             </div>
             <hr>
             <div id="last-footer">
-            <p> &copy; 2024 Shoyemi Maria. All rights reserved.</p>
+            <p> &copy; <span id="year">2026</span> Shoyemi Maria. All rights reserved.</p>
             </div>
-        </div>
+        </footer>
     </div>
     </main>
     <script src="index.js"></script>

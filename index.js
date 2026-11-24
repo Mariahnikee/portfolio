@@ -29,16 +29,31 @@ const burger = document.querySelector("#burger-menu");
 const ul = document.querySelector("nav ul");
 const nav = document.querySelector("nav");
 
+const setMenu = (open) => {
+    ul.classList.toggle("show", open);
+    burger.setAttribute("aria-expanded", String(open));
+    burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+};
+
 burger.addEventListener("click", () => {
-    ul.classList.toggle("show");
+    setMenu(!ul.classList.contains("show"));
 });
 
 const navKey = document.querySelectorAll(".nav-key");
 
 navKey.forEach((link) => link.addEventListener("click", () => {
-    ul.classList.remove("show");
+    setMenu(false);
 })
 );
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && ul.classList.contains("show")) {
+        setMenu(false);
+        burger.focus();
+    }
+});
+
+document.querySelector("#year").textContent = new Date().getFullYear();
 
 document.addEventListener("scroll", onScroll);
 
@@ -84,5 +99,9 @@ const handleScrollAnimation = () => {
 window.addEventListener("scroll", () => {
     handleScrollAnimation();
 });
+
+// Show sections already in view on load, and when a nav link jumps straight to one.
+handleScrollAnimation();
+window.addEventListener("hashchange", handleScrollAnimation);
 
 
