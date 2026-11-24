@@ -1202,3 +1202,45 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     margin-top: 5px;
   }
 }
+
+/* certifications */
+.cert-badge{
+  display: inline-block;
+  margin: -4px 0 10px;
+  padding: 4px 12px;
+  background: rgb(16, 16, 65);
+  color: rgb(227, 223, 223);
+  border-radius: 12px;
+  font-family: Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+.cert-heading{
+  margin: 30px 0 12px 12px;
+  text-align: left;
+}
+.certs{
+  margin: 0;
+  padding: 0 0 0 12px;
+  list-style: none;
+  text-align: left;
+}
+.certs li{
+  padding: 8px 0 8px 14px;
+  border-left: 3px solid #393b64;
+  margin-bottom: 8px;
+  font-family: 'Lucida Sans', 'Lucida Grande', Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  color: rgb(49, 46, 46);
+}
+@media screen and (max-width: 768px) {
+  .cert-heading{
+    text-align: center;
+    margin-left: 0;
+  }
+  .certs{
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
